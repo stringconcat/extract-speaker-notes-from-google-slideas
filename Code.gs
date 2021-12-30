@@ -6,6 +6,9 @@ const downloadSpeakerNotes = () => {
     // Find all the slides in the current presentation
     const slides = presentation.getSlides();
 
+    // When we export the notes bulleted lists and numeric lists formatting is lost.
+    // this code adds `-` at the beginning of each list item
+    // it AFFECTS original slide's speaker notes
     // slides
     //   .map((slide, index) => {
     //     slide
