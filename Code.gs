@@ -26,8 +26,6 @@ const downloadSpeakerNotes = () => {
                 .getNotesPage()
                 .getSpeakerNotesShape()
                 .getText()
-                .getParagraphs()
-                .map((p, i) => p)
                 .asRenderedString();
             return { index, note };
         })
